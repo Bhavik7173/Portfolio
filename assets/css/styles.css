@@ -240,10 +240,9 @@ img {
 }
 
 .home__blob-img {
-  width: 360px;
-  /* mix-blend-mode: multiply;
-  filter: brightness(1) saturate(1) invert(1) invert(1);
-  experimental */
+width: 430px;
+    height: 500px;
+    transform: translate(20px, 40px);
 }
 
 /*BUTTONS*/
@@ -276,9 +275,16 @@ img {
 }
 
 .about__img img {
-  width: 200px;
-  border-radius: 0.5rem;
+  width: 220px;
+  /* border-radius: 50%;        makes it circular */
+  /* box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); soft shadow */
+  transition: transform 0.3s ease-in-out;     /* hover effect */
 }
+
+.about__img img:hover {
+  transform: scale(1.05); /* subtle zoom on hover */
+}
+
 
 /* ===== SKILLS =====*/
 .skills__container {
@@ -610,3 +616,19 @@ img {
 .form-message.loading { color: #000; }
 .form-message.success { color: green; }
 
+.about__img {
+  position: relative;
+  display: inline-block;
+}
+/* 
+.about__img::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 260px;
+  height: 260px;
+  background: var(--first-color);
+  border-radius: 50% 40% 60% 30% / 40% 60% 30% 50%; /* blob shape */
+  z-index: -1;
+} */
