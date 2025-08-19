@@ -640,7 +640,7 @@ img {
   width: 260px;
   height: 260px;
   background: var(--first-color);
-  border-radius: 50% 40% 60% 30% / 40% 60% 30% 50%; /* blob shape */
+  border-radius: 50% 40% 60% 30% / 40% 60% 30% 50%; /* blob shape 
 z-index: -1;
 }
 
